@@ -1,7 +1,6 @@
 from django.urls import path
-
-from .views import home
+from app_blog.views import create
 
 urlpatterns = [
-    path("", home, name="app_blog"),
+    path('create/', create.view, name='create'),
 ]
